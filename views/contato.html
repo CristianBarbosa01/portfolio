@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../portfolio/bootstrap/css/bootstrap.min.css">
+    <script src="../js/botao.js"></script>
 </head>
 
 <body id="body">
@@ -20,56 +21,39 @@
     </nav>
     <div id="imageBanner">
         <p id="nome">Cristian Barbosa</p>
-        <div id="redes">
+        <!-- <div id="redes">
             <p id="nomeR">?</p>
             <p id="nomeR">?</p>
             <p id="nomeR">?</p>
-        </div>
+        </div> -->
     </div>
-    <form>
+    <form name="formulario">
         <div id="cont">
-            <p>Contato</p>
+            <p><b>Contato</b></p>
         </div>
         <div id="box1">
-            <div>
-                <label for="name">Nome:</label>
-                <input type="text" id="name1"></input>
+            <div id="name0">
+                <label id="label" for="name"><b>Nome:</b></label>
+                <input type="text" placeholder="Insira seu nome" class="nameL" name="name" id="name1"></input>
             </div>
             <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email1"></input>
+                <label id="label" for="email"><b>E-mail:</b></label>
+                <input type="email" placeholder="nome@exemplo.com" name="email" id="email1"></input>
             </div>
             <div>
-                <label for="Subject">Assunto:</label>
-                <input type="text" id="Subject1"></input>
+                <label id="label" for="Subject"><b>Assunto:</b></label>
+                <input type="text" placeholder="Tema" name="assunto" id="Subject1"></input>
             </div>
             <div>
-                <label for="msg">Mensagem:</label>
+                <label id="label" for="msg"><b>Mensagem:</b></label>
                 <textarea id="msg"></textarea>
             </div>
             <div id="button">
-                <button type="submit" id="button1">Enviar</button>
+                <button type="submit" onclick="validar()" id="button1">Enviar</button>
             </div>
         </div>
     </form>
-    <div class="fab">
-        <button class="main">
-        </button>
-        <ul>
-            <li>
-                <label for="opcao1">Opção 1</label>
-                <button id="opcao1">⎈</button>
-            </li>
-            <li>
-                <label for="opcao2">Opção 2</label>
-                <button id="opcao2">⎗</button>
-            </li>
-            <li>
-                <label for="opcao3">Opção 3</label>
-                <button id="opcao3">☏</button>
-            </li>
-        </ul>
-    </div>
+
     <footer id="rodape">
         <p>Autor: Cristian Barbosa</p>
         <p><a>©Copyryght 2021 - Cristian Barbosa -Todos os Direitos reservados</a></p>

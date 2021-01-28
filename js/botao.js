@@ -10,3 +10,13 @@ function mudar() {
         }
     }
 }
+
+function validar() {
+    var nameL = document.getElementsByClassName("nameL");
+
+    if (nameL.nameL.value == "") {
+        alert('Nome não informado');
+        nameL.focus();
+        return;
+    }
+}
