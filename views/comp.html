@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../portfolio/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../portfolio/bootstrap/css/comp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="navbarResponsive">
+    <div id="home">
+        <!----------Começo Da Navegação----------->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!---------- Fim Da Navegação----------->
+        <!----------Começo Do Background----------->
+        <nav class="background">
+            <img class="img-fluid" src="../img/montanhas.jpg">
+        </nav>
+        <div class="heading-content text-center">
+            <h5>Oi, eu sou</h5>
+            <h1>Cristian Barbosa</h1>
+        </div>
+    </div>
+    <!----------Fim Do Background----------->
+    <!----------Começo Do About----------->
+    <div id="about" class=" mt-3 mb-5">
+        <div class="post-heading text-center">
+            <h3 class="display-4 font-weight-bold">Sobre Mim</h3>
+            <hr class="w-50 mx-auto mb-5">
+        </div>
+        <div class="row"></div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <img src="../img/pess.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <h2>Quer me conhecer?</h2>
+            <hr>
+            <p>Mais uma noite como todas as anteriores. Pego minha caneca de café cheia, acendo meu ultimo cigarro e corro pra velha janela do quarto. Observo a noite fria e chuvosa, até parece confortável por um momento, se não fossem as dezenas de preocupações
+                que me desmotivam a cada dia. Penso em você, mesmo sabendo o quão longe está de mim, sinto aquele amor que continua a me desgraçar intensamente a cada dia, e penso quando enfim poderei te ter comigo. Sei lá, o café chega ao fim e trago
+                a ultima ponta, nada muda. É como se eu fosse passar por isso mais uns longos anos a frente.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Minhas Habilidades</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="post-heading">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="post-heading text-center">Habilidades</h4>
+                            <hr>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cont">
+                            <p class="barras">HTML</p>
+                            <div class="skills html">40%</div>
+                        </div>
+
+                        <div class="cont">
+                            <p class="barras">CSS</p>
+                            <div class="skills css">50%</div>
+                        </div>
+                        <div class="cont">
+                            <p class="barras">JavaScript</p>
+                            <div class="skills js">5%</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!----------Fim Do About----------->
+    <!----------Começo Do Contato----------->
+    <div id="contact" class="w-50 mx-auto mt-5 mb-5">
+        <div class="post-heading text-center col-lg-12 col-md-12 col-12">
+            <h3 class="display-4 font-weight-bold">Contato</h3>
+            <hr class="w-50 mx-auto mb-5">
+        </div>
+        <form class="col-lg-12" action="/action_page.php">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+    </div>
+    <!----------Fim Do Contato----------->
+    <!----------Começo Do pé----------->
+    <div class="pe">
+        <footer class=" pe bg-light text-center text-lg-start  col-lg-12 col-md-12 col-12">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-dark" href="">Cristian Barbosa</a>
+            </div>
+        </footer>
+    </div>
+    <!----------Fim Do pé----------->
+
+    </div>
+</body>
+
+</html>
