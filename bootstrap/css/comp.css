@@ -72,7 +72,7 @@ body {
 }
 
 .skills {
-    text-align: right;
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -81,20 +81,29 @@ body {
 .html {
     background-color: #2196F3;
     width: 40%;
+    border-radius: 50px;
 }
 
 .css {
     width: 50%;
     background-color: #4CAF50;
+    border-radius: 50px;
 }
 
 .js {
     width: 5%;
     background-color: #f44336;
+    border-radius: 50px;
 }
 
 .barras {
     font-size: 20px;
+    margin-top: 20px;
+}
+
+.barra1 {
+    font-size: 20px;
+    margin-top: 0%;
 }
 
 
